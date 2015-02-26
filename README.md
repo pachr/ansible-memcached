@@ -5,27 +5,28 @@ The playbook install memcached with a custom /etc/memcached.conf
 ## Vars
 
 - hosts : hosts groupname
+ * Type : string
  * No default, it must be specifiy in cmd
 
 - remote_user : the remote user on AWS
- *  Type : string
- *  Default : ubuntu
+ * Type : string
+ * No default, it must be specify in cmd 
 
 - listen : the listening ip address
- *  Type : string
- *  Default : 127.0.0.1
+ * Type : string
+ * Default : 127.0.0.1
 
 - user : the user who launch the memcached deamon
- *  Type : string
- *  Default : root
+ * Type : string
+ * Default : root
 
 - memory : the maximum memory used (Mb)
- *  Type : integer
- *  Default : 64
+ * Type : integer
+ * Default : 64
 
 - max_connections : the maximum simultaneous connections
- *  Type : integer
- *  Default : 1024
+ * Type : integer
+ * Default : 1024
 
 ## group_vars
 
