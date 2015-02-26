@@ -35,7 +35,7 @@ Variables which can be configure (group_vars/all) => for the when condition (def
 
 ###With default vars :
 ```
-ansible-playbook -i hosts  memcached.yml --extra-vars "hosts=launched remote_user=ubuntu" --private-key=~/.ssh/pac-vm-keypair.pem 
+ansible-playbook -i hosts  memcached.yml --extra-vars "hosts=launched remote_user=ubuntu" --private-key=/path/to/keypair 
 
 ```
 
